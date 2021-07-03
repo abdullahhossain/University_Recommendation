@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        //click korle animation hoye oval shaped hobe
+        <shape android:shape="oval">
+            <gradient android:angle="135" android:endColor="#DD0161CD" android:startColor="#DD0161CD" />
+            <corners android:radius="20dp" />
+            <stroke android:width="2dp" android:color="#fff" />
+        </shape>
+
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="225" android:endColor="#0161CD" android:startColor="#0161CD" />
+            <corners android:radius="20dp" />
+            <stroke android:width="4dp" android:color="#0F5E5959" />
+        </shape>
+
+    </item>
+</selector>

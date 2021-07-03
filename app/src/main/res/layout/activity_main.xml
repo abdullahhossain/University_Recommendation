@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbarwithoutback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/firstpagefinal"
+        app:layout_constraintBottom_toTopOf="@+id/scroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"></ImageView>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:layout_marginBottom="29dp"
+        android:background="#fff"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:layout_constraintVertical_bias="0.48000002">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:forceDarkAllowed="false"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textColor="#0161CD"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Here you will find your"
+                android:textColor="#0161CD"
+
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="desired university...."
+                android:textColor="#0161CD"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="right"
+        app:fab_addButtonColorNormal="#0161CD"
+
+        app:fab_addButtonColorPressed="#3D7ABD"
+        app:fab_addButtonPlusIconColor="#fff"
+        app:fab_labelStyle="@style/customfab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        app:layout_constraintVertical_bias="0.561">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0161CD"
+            app:fab_colorPressed="#0161CD"
+            app:fab_icon="@drawable/admin"
+            app:fab_size="mini"
+            app:fab_title="Admin Panel"></com.getbase.floatingactionbutton.FloatingActionButton>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/StudentLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0161CD"
+            app:fab_colorPressed="#0161CD"
+            app:fab_icon="@drawable/student"
+            app:fab_size="mini"
+            app:fab_title="Student Login"></com.getbase.floatingactionbutton.FloatingActionButton>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/StudentRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0161CD"
+            app:fab_colorPressed="#0161CD"
+            app:fab_icon="@drawable/registration"
+            app:fab_size="mini"
+            app:fab_title="Student Registration"></com.getbase.floatingactionbutton.FloatingActionButton>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/AboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0161CD"
+            app:fab_colorPressed="#0161CD"
+            app:fab_icon="@drawable/about"
+            app:fab_size="mini"
+            app:fab_title="About Us"></com.getbase.floatingactionbutton.FloatingActionButton>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

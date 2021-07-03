@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:forceDarkAllowed="false"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdmitCard">
+    <include layout="@layout/toolbarwithoutback"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="10dp"
+            android:id="@+id/admitCardPrint"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#0161CD"
+                >
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#0161CD"
+                    >
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="East Delta University"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_margin="10dp"
+                        android:textAlignment="center"
+                        android:id="@+id/setuniname"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Admission Test 2021"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Admit Card"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_margin="10dp"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/photoadd"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+
+                >
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Student Name:"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                     />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="Khorshed Alam"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:id="@+id/setstudentname"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Roll No: "
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="2345"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:id="@+id/setrollnum"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Exam: "
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="05-08-2021"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty:  "
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty of Engineering"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:id="@+id/setfaculty"
+                    android:layout_margin="10dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="50dp"
+                    android:src="@drawable/sign"
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="50dp"
+                    android:src="@drawable/signn"
+                    android:layout_gravity="right"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <View
+                    android:layout_margin="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="2dp"
+                    android:background="#000"
+                    />
+                <View
+                    android:layout_margin="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="2dp"
+                    android:background="#000"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:layout_height="20dp"
+                   android:text="Authority of Examination"
+                   android:textColor="#000"
+                   android:textStyle="bold"
+                   android:textAlignment="center"
+                   android:gravity="center_horizontal"
+                   />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="20dp"
+                    android:text="Associate Dean "
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0161CD"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please carry a hard copy of this admit card. Phones are not allowed during exam."
+                    android:textColor="#fff"
+
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="Download Admit Card"
+                    android:id="@+id/downloadpdf"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

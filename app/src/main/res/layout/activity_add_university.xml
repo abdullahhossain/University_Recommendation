@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".AddUniversity">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFF"
+            android:padding="10dp"
+            android:forceDarkAllowed="false"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add University"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="University Name:"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/University_name"
+                android:textColor="#000"
+                android:hint="Enter University Name"
+
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+                android:backgroundTint="#0161CD"
+                android:inputType="text"
+                android:drawableStart="@drawable/faculty"
+                android:forceDarkAllowed="false"
+                android:drawableLeft="@drawable/faculty"></EditText>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faculty:"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/University_faculty"
+                android:textColor="#000"
+                android:hint="Enter Faculty name"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+                android:backgroundTint="#0161CD"
+                android:inputType="text"
+                android:drawableStart="@drawable/university"
+                android:forceDarkAllowed="false"
+                android:drawableLeft="@drawable/university"></EditText>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Required GPA for SSC:"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/ssc"
+                android:textColor="#000"
+                android:hint="Enter GPA"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+                android:backgroundTint="#0161CD"
+                android:inputType="numberDecimal"
+                android:drawableStart="@drawable/gpa"
+                android:forceDarkAllowed="false"
+                android:drawableLeft="@drawable/gpa"></EditText>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Required GPA for HSC:"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/hsc"
+                android:textColor="#000"
+                android:hint="Enter GPA"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+                android:backgroundTint="#0161CD"
+                android:inputType="numberDecimal"
+                android:drawableStart="@drawable/gpa"
+                android:forceDarkAllowed="false"
+                android:drawableLeft="@drawable/gpa"></EditText>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Departments:"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/departments"
+                android:textColor="#000"
+                android:hint="Enter Department "
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+                android:backgroundTint="#0161CD"
+                android:inputType="textLongMessage"
+                android:drawableStart="@drawable/gpa"
+                android:forceDarkAllowed="false"
+                android:drawableLeft="@drawable/gpa"></EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundbtn"
+                android:backgroundTint="#0161CD"
+                android:text="Insert Now"
+                android:textColor="#fff"
+                android:onClick="insertInfo"
+                android:layout_gravity="center"
+                ></Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

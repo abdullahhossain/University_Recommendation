@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+    tools:context=".adminLogin">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:forceDarkAllowed="false"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:forceDarkAllowed="false"
+
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:background="#FFF"
+                >
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="280dp"
+                    android:src="@drawable/adminadminadmin"
+
+                    ></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Login"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"></TextView>
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:id="@+id/user_email"
+                    android:textColor="#000"
+                    android:hint="Email Address"
+                    android:drawableTint="#0161CD"
+                    android:textColorHint="#C1000000"
+                    android:backgroundTint="#0161CD"
+                    android:inputType="textEmailAddress"
+                   android:drawableStart="@drawable/email"
+                    android:forceDarkAllowed="false"
+                    android:drawableLeft="@drawable/email"></EditText>
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Password"
+                    android:textColor="#000"
+                    android:backgroundTint="#0161CD"
+                    android:drawableTint="#0161CD"
+                    android:textColorHint="#C1000000"
+
+                    android:id="@+id/user_pass"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:forceDarkAllowed="false"
+                    ></EditText>
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundbtn"
+                    android:backgroundTint="#0161CD"
+                    android:text="Log In"
+                    android:textColor="#fff"
+                    android:onClick="adminLogIn"
+                    android:layout_gravity="center"
+                    ></Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="By using this app means you’re okay with our"
+                        android:textStyle="bold"
+                        android:textColor="#5C5656"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Terms of Service, Privacy Policy"
+                        android:textStyle="bold"
+                        android:textColor="#3F51B5"
+                        android:id="@+id/terms"
+
+                        ></TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

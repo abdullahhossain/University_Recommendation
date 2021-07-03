@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:forceDarkAllowed="false"
+    android:id="@+id/tool"
+    android:background="#0161CD"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:id="@+id/toolbartext"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:drawableTint="#fff"
+                android:textColor="#fff"
+                android:drawableLeft="@drawable/exit"
+                android:drawableStart="@drawable/exit"
+
+                android:id="@+id/logooout"
+                ></TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:forceDarkAllowed="false"
+    android:layout_height="match_parent"
+    tools:context=".StudentSignUp">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/signup"
+
+                ></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student Registration"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"></TextView>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:id="@+id/user_name"
+                android:textColor="#000"
+                android:hint="Enter Your Name"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+                android:backgroundTint="#0161CD"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/student"
+                android:forceDarkAllowed="false"
+                android:drawableLeft="@drawable/student"></EditText>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:id="@+id/user_email"
+                android:textColor="#000"
+                android:hint="Enter Email Address"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+                android:backgroundTint="#0161CD"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/email"
+                android:forceDarkAllowed="false"
+                android:drawableLeft="@drawable/email"></EditText>
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter Password"
+                android:textColor="#000"
+                android:backgroundTint="#0161CD"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+
+                android:id="@+id/user_pass"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:forceDarkAllowed="false"
+                ></EditText>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter SSC roll number"
+                android:textColor="#000"
+                android:backgroundTint="#0161CD"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+
+                android:id="@+id/user_ssc"
+                android:inputType="numberDecimal"
+                android:drawableStart="@drawable/gpa"
+                android:drawableLeft="@drawable/gpa"
+                android:forceDarkAllowed="false"
+                ></EditText>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter HSC roll number"
+                android:textColor="#000"
+                android:backgroundTint="#0161CD"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+
+                android:id="@+id/user_hsc"
+                android:inputType="numberDecimal"
+                android:drawableStart="@drawable/gpa"
+                android:drawableLeft="@drawable/gpa"
+                android:forceDarkAllowed="false"
+                ></EditText>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:id="@+id/user_reg_no"
+                android:textColor="#000"
+                android:hint="Enter Registration Number (ex. 1234)"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+                android:backgroundTint="#0161CD"
+                android:inputType="number"
+                android:drawableStart="@drawable/gpa"
+                android:forceDarkAllowed="false"
+                android:drawableLeft="@drawable/gpa"></EditText>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter session (ex. 2019-2020)"
+                android:textColor="#000"
+                android:backgroundTint="#0161CD"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+
+                android:id="@+id/user_session"
+                android:inputType="text"
+                android:drawableStart="@drawable/time"
+                android:drawableLeft="@drawable/time"
+                android:forceDarkAllowed="false"
+                ></EditText>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint=" Select Birth Date"
+                android:textColor="#000"
+                android:backgroundTint="#0161CD"
+                android:drawableTint="#0161CD"
+                android:textColorHint="#C1000000"
+                android:id="@+id/user_dob"
+                android:padding="20dp"
+                android:inputType="numberDecimal"
+                android:drawableStart="@drawable/dob"
+                android:drawableLeft="@drawable/dob"
+                android:forceDarkAllowed="false"
+                ></TextView>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundbtn"
+                android:backgroundTint="#0161CD"
+                android:text="Sign Up"
+                android:textColor="#fff"
+                android:onClick="signUp"
+                android:layout_gravity="center"
+                ></Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

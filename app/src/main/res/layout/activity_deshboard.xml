@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="false"
+    android:background="#fff"
+    tools:context=".Deshboard">
+    <include layout="@layout/toolbarwithlogout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shimmerLayout"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Welcome "
+
+                            android:textSize="20dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/studentName"
+                            android:textSize="20dp"
+                            android:textColor="#0161CD"
+                            android:textStyle="bold"
+                            ></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Student Name: "
+
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/stuName"
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SSC Roll Number: "
+
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/sscroll"
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HSC Roll Number: "
+
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/hscroll"
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Registration Number: "
+
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/registrationNum"
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SSC GPA: "
+
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/sscgpa"
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HSC GPA: "
+
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/hscgpa"
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Session: "
+
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/stuSession"
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth: "
+
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/stuDOB"
+                            android:textSize="15dp"
+                            android:textColor="#202020"
+                            android:textStyle="normal"
+                            ></TextView>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/deshboard"
+                        ></ImageView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundbtn"
+                        android:backgroundTint="#0161CD"
+                        android:text="Check"
+                        android:textColor="#fff"
+                        android:onClick="Check"
+                        android:layout_gravity="center"
+                        ></Button>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundbtn"
+                        android:backgroundTint="#0161CD"
+                        android:text="View Applied Universities"
+                        android:textColor="#fff"
+                        android:onClick="viewApplied"
+                        android:layout_gravity="center"
+                        ></Button>
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
